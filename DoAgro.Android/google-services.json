@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "50073005785",
+    "project_id": "doagro-4ab26",
+    "storage_bucket": "doagro-4ab26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50073005785:android:97712b72b10b693a3198c8",
+        "android_client_info": {
+          "package_name": "com.companyname.DoAgro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50073005785-l44tchjtntgcp67nfa4e63ttf1om6rr4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAORmGx7StS_KVkahljSogKIIvCAbEO26c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50073005785-l44tchjtntgcp67nfa4e63ttf1om6rr4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

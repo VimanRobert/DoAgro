@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoAgro.Asolamente.Bienal"
+             Title="Bienal">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#3D69AD">
+            <Label Text="Selectati cultura pentru a primi rezultate"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                   FontSize="Medium"
+                   TextColor="White"/>
+            <Picker x:Name="Parcela"
+                    BackgroundColor="White"
+                    Title="Parcela"
+                    TitleColor="Gray"
+                    SelectedIndexChanged="Parcela_SelectedIndexChanged"
+                    ItemDisplayBinding="{Binding Denumire}"/>
+            <Button x:Name="ButonGenereazaRotatie" Text="Genereaza rezultate"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="StartAndExpand"
+                    CornerRadius="40"
+                    TextColor="Green"
+                    BorderWidth="5"
+                    BorderColor="Green"
+                    Clicked="ButonGenereazaRotatie_Clicked"
+                    />
+            <Label x:Name="RezultatRotatie" Text="Rezultatele vor aparea aici"
+                   BackgroundColor="White"
+                   TextColor="DarkGreen"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   Padding="30"
+                   FontSize="Medium"
+                   />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

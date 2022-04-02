@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Profil"
+             x:Class="DoAgro.MenuViews.Profil">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="" x:Name="usernameLabel"  
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+            <Label Text="" x:Name="emailLabel"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                   Padding="40"
+                   FontSize="Medium"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

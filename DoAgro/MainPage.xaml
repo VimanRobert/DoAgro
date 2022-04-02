@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Acasa"
+             x:Class="DoAgro.MainPage"
+             >
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout>
+                <Label Text="Bine ati venit! "
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand"
+                   Padding="20,20,0,0"
+                   FontSize="Medium"/>
+                <Button Text="Asolament bienal" TextColor="#294578" BackgroundColor="White" BorderColor="#294578" BorderWidth="2"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    Padding="50,10,50,10"
+                    Margin="0,300,0,0"
+                    CornerRadius="50"
+                    Clicked="ButtonAslBienal"/>
+                <Button Text="Asolament trienal" TextColor="#294578" BackgroundColor="White" BorderColor="#294578" BorderWidth="2"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    Padding="50,10,50,10"
+                    Margin="0,20,0,30"
+                    CornerRadius="50"
+                    Clicked="ButtonAslTrienal"/>
+                <Button Text="Documentatie" TextColor="#294578" BackgroundColor="White" BorderColor="#294578" BorderWidth="2"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    Padding="50,10,50,10"
+                    Margin="0,0,0,50"
+                    CornerRadius="50"
+                    Clicked="ButtonDocumentatie"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

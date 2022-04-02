@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoAgro.MenuViews.Setari">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Schimba parola"
+                   FontSize="Medium"
+                   FontAttributes="Bold"/>
+            <Label Text="Adaugati o parola noua dupa care accesati butonul de mai jos"/>
+            <Entry Placeholder="Parola noua" x:Name="newParola" IsPassword="True"/>
+            <Entry Placeholder="Confirmati parola" x:Name="confirmareParola" IsPassword="True"/>
+            <Button Text="Schimba parola" x:Name="schimbaParola" Clicked="schimbaParola_Clicked"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand"
+                   Padding="20"/>
+            <Label Text="Sterge contul"
+                   FontSize="Medium"
+                   FontAttributes="Bold"/>
+            <Label Text="Acesand butonul va fi sters acest cont si veti fi redirectionat la pagina de logare."/>
+            <Button Text="Sterge contul" x:Name="stergeContul" Clicked="stergeContul_Clicked" 
+                HorizontalOptions="StartAndExpand" 
+                   Padding="20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

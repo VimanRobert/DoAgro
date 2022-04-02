@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoAgro.Documentatie.MainDoc"
+             Title="Documentatie">
+
+    <ListView x:Name="listViewCulturi" ItemSelected="listViewCulturi_ItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" BackgroundColor="Wheat">
+                        <Label Text="{Binding Denumire}"
+                               FontSize="Medium"
+                               TextColor="#294578"                              
+                               FontAttributes="Bold"
+                               HorizontalOptions="CenterAndExpand"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    <!--
+    <ContentPage.Content>
+        <ScrollView HeightRequest="4000">
+            <StackLayout>
+                <Label Text="Culturi:" FontSize="Subtitle"
+                   Padding="10,20,0,0"/>
+            <Button Text="Brocoli" BackgroundColor="Wheat" TextColor="#294578"/>
+            <Button Text="Castraveti" BackgroundColor="Wheat" TextColor="#294578"/>
+            <Button Text="Cartofi-albi" BackgroundColor="Wheat" TextColor="#294578"/>
+            <Button Text="Ceapa galbena" BackgroundColor="Wheat" TextColor="#294578"/>
+            <Button Text="Ceapa rosie" BackgroundColor="Wheat" TextColor="#294578"/>
+            <Button Text="Floarea-soarelui" BackgroundColor="Wheat" TextColor="#294578"/>
+            <Button Text="Mazare" BackgroundColor="Wheat" TextColor="#294578"/>
+            <Button Text="Porumb" BackgroundColor="Wheat" TextColor="#294578"/>
+            <Button Text="Ridiche" BackgroundColor="Wheat" TextColor="#294578"/>
+            <Button Text="Rosie" BackgroundColor="Wheat" TextColor="#294578"/>
+            <Button Text="Usturoi" BackgroundColor="Wheat" TextColor="#294578"/>
+            <Button Text="Varza-verde" BackgroundColor="Wheat" TextColor="#294578"/>
+            <Button Text="Vinete" BackgroundColor="Wheat" TextColor="#294578"/>
+                
+
+            <Label Text="Important:" FontSize="Subtitle"
+                   Padding="10,20,0,0"/>
+            <Label Text="O specie de plante poate sa revina pe aceeasi suprafata de teren dupa 3-4 ani."/>
+            <Label Text="Numarul parcelelor/solarelor trebuie sa fie egal cu numarul anilor de rotatie"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    -->
+</ContentPage>

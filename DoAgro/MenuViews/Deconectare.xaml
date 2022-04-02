@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoAgro.MenuViews.Deconectare"
+             BackgroundImageSource="Login_Background_2.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Sunteti sigur ca doriti sa va deconectati ?"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   FontSize="Medium"
+                   TextColor="Wheat"/>
+            <Button Text="Da" Clicked="Deconect"
+                    FontSize="Medium"
+                    TextColor="#294578"
+                    BackgroundColor="Wheat"
+                    Padding="20,10,20,10"/>
+            <Button Text="Nu" Clicked="Ramane"
+                    FontSize="Medium"
+                    TextColor="#294578"
+                    BackgroundColor="Wheat"
+                    Padding="20,10,20,10"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

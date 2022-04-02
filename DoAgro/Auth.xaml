@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Autentificare"
+             x:Class="DoAgro.Auth"
+             BackgroundColor="LightSkyBlue">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout Padding="0" Margin="40">
+               
+                <Entry x:Name="new_email" Placeholder="Email" PlaceholderColor="Gray" BackgroundColor="White" TextColor="#294578"></Entry>
+                <Entry x:Name="new_username" Placeholder="Nume utilizator" PlaceholderColor="Gray" BackgroundColor="White" TextColor="#294578"></Entry>
+                <Entry x:Name="new_password" Placeholder="Parola" IsPassword="True" PlaceholderColor="Gray" BackgroundColor="White" TextColor="#294578"></Entry>
+                <Entry x:Name="confirmare_parola" Placeholder="Confirmare parola" IsPassword="True" PlaceholderColor="Gray" BackgroundColor="White" TextColor="#294578"></Entry>
+            <Button Text="Creeaza cont" Clicked="buttonCreeaza" VerticalOptions="Center" BackgroundColor="Wheat" TextColor="#294578" BorderColor="#294578"
+                    BorderWidth="1.5" CornerRadius="30" Padding="20"
+                    Margin="10,250,20,0"/>
+                <!--
+                <Button Text="Inapoi" Clicked="buttonInapoi" VerticalOptions="Center" BackgroundColor="Wheat" TextColor="#294578" BorderColor="#294578"
+                    BorderWidth="1.5" CornerRadius="30"
+                    Margin="10,10,20,0"/>
+                <Entry x:Name="new_nume" Placeholder="Nume" PlaceholderColor="Gray" BackgroundColor="White" TextColor="#294578"></Entry>
+                <Entry x:Name="new_prenume" Placeholder="Prenume" PlaceholderColor="Gray" BackgroundColor="White" TextColor="#294578"></Entry>
+                -->
+        </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

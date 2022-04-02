@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoAgro.InfoCultura">
+    <ContentPage.Content>
+        <ScrollView HeightRequest="2500">
+            <StackLayout Margin="20">
+            <Image Source="{Binding Imagine}"
+                   WidthRequest="200"
+                   HeightRequest="200"/>
+            <Label Text="{Binding Denumire}"
+                   FontSize="Title"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="{Binding Familie}"
+                   FontSize="Subtitle"
+                   VerticalOptions="StartAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding Descriere}"
+                   FontSize="Medium"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
