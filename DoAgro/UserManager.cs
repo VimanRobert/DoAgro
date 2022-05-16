@@ -37,9 +37,9 @@ namespace DoAgro
         }
         */
 
-        public async Task<bool> SchimbareParola(string token, string parola)
+        public async Task<bool>SchimbareParola(string email)
         {
-            await authProvider.ChangeUserPassword(token, parola);
+            await authProvider.SendPasswordResetEmailAsync(email);
             return true;
         }
     }

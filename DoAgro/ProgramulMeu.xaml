@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoAgro.ProgramulMeu"
+             Title="Programul meu">
+    <ContentPage.Content>
+        <Grid>
+            <ScrollView Orientation="Vertical">
+            <StackLayout>
+                    <Label Text="Aici va veti crea propriul program. Selectati o cultura si ora din zi cand veti fi notificat cu privire la ingrijirea ei."
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                    <Picker x:Name="AlegeCultura"
+                        Title="Alege cultura"
+                        ItemDisplayBinding="{Binding Denumire}"
+                        SelectedIndexChanged="Cultura_SelectedIndexChanged"
+                        TitleColor="Gray"
+                        BackgroundColor="White"
+                HorizontalOptions="CenterAndExpand" />
+                    <Picker x:Name="MesajNotificare"
+                            ItemDisplayBinding="{Binding Descriere}"
+                            SelectedIndexChanged="MesajNotificare_SelectedIndexChanged"
+                            Title="Alege mesajul"
+                            TitleColor="Gray"
+                        BackgroundColor="White"
+                            HorizontalOptions="CenterAndExpand"
+                        />
+                    <TimePicker x:Name="SetareOraNotificare" Format="HH:mm"
+                            TextColor="Blue"
+                            HorizontalOptions="CenterAndExpand"
+                    PropertyChanged="SetareOraNotificare_PropertyChanged"
+                    />
+                    <Label x:Name="oraSetata"
+                       HorizontalOptions="CenterAndExpand"
+                       Text="ora aleasa"
+                       TextColor="Gray"
+                       Padding="20"/>
+                    <Button x:Name="ButtonCreeazaProgram" Text="Creeaza program"
+                    HorizontalOptions="CenterAndExpand"
+                    CornerRadius="30"
+                    TextColor="Blue"
+                    BorderWidth="4"
+                    BorderColor="Blue"
+                    Clicked="ButtonCreeazaProgram_Clicked"
+                    />
+                    <Button Text="Sterge"
+                    x:Name="ButtonStergeElement"
+                    Clicked="ButtonStergeElement_Clicked"
+                    TextColor="Red"
+                    BorderColor="Red"
+                            BorderWidth="4"
+                            CornerRadius="30"
+                    HorizontalOptions="CenterAndExpand"/>
+                    <CollectionView x:Name="dataView" SelectionChanged="dataView_SelectionChanged" SelectionMode="Single">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+                                    <Label Text="{Binding titlu}"
+                                           x:Name="titluItem"
+                                       FontSize="Subtitle"
+                                       TextColor="DarkGreen"/>
+                                    <Label Text="{Binding mesaj}"
+                                           x:Name="mesajNTItem"
+                                           TextColor="DarkBlue"
+                                           FontSize="Medium"
+                                        />
+
+                                    <Label Text="{Binding oraNotificare}"
+                                           x:Name="oraNotificareItem"
+                                       FontSize="Small"/>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </StackLayout>
+            </ScrollView>
+            <!--
+            <ScrollView BackgroundColor="Wheat" HeightRequest="1500">
+                <Label Text="Aici vor aparea culturile salvate de dumneavoastra!"
+                       TextColor="DarkGreen"
+                       FontSize="Subtitle"/>
+            </ScrollView>
+            -->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

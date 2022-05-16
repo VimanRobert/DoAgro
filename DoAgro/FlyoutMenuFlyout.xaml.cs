@@ -35,8 +35,6 @@ namespace DoAgro
                 MenuItems = new ObservableCollection<FlyoutMenuFlyoutMenuItem>(new[]
                 {
                     new FlyoutMenuFlyoutMenuItem {Title = "Acasa", Point=typeof(MainPage)},
-                    new FlyoutMenuFlyoutMenuItem {Title = "Profil", Point=typeof(Profil)},
-                    new FlyoutMenuFlyoutMenuItem {Title = "Portofoliu", Point=typeof(Portofoliu)},
                     new FlyoutMenuFlyoutMenuItem {Title = "Informatii", Point=typeof(Informatii)},
                     new FlyoutMenuFlyoutMenuItem {Title = "Setari", Point=typeof(Setari) },
                     new FlyoutMenuFlyoutMenuItem {Title = "Deconectare", Point=typeof(Deconectare) },

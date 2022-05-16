@@ -7,20 +7,13 @@
             <Label Text="Schimba parola"
                    FontSize="Medium"
                    FontAttributes="Bold"/>
-            <Label Text="Adaugati o parola noua dupa care accesati butonul de mai jos"/>
-            <Entry Placeholder="Parola noua" x:Name="newParola" IsPassword="True"/>
-            <Entry Placeholder="Confirmati parola" x:Name="confirmareParola" IsPassword="True"/>
-            <Button Text="Schimba parola" x:Name="schimbaParola" Clicked="schimbaParola_Clicked"
+            <Label Text="Adaugati-va adresa de mail cu care sunteti autentificat pentru a primi mesaj cu link-ul de accesare pentru schimbare a parolei"/>
+            <Entry Placeholder="Adresa email" x:Name="adresaEmail"/>
+            <Button Text="Acceseaza" x:Name="schimbaParola" Clicked="SchimbaParola_Clicked"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="StartAndExpand"
                    Padding="20"/>
-            <Label Text="Sterge contul"
-                   FontSize="Medium"
-                   FontAttributes="Bold"/>
-            <Label Text="Acesand butonul va fi sters acest cont si veti fi redirectionat la pagina de logare."/>
-            <Button Text="Sterge contul" x:Name="stergeContul" Clicked="stergeContul_Clicked" 
-                HorizontalOptions="StartAndExpand" 
-                   Padding="20"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -189,7 +189,7 @@ namespace DoAgro.Asolamente
                     RezultatRotatie3.Text = "rotatie intre ele";
                 }
 
-                //Nu am terminat inca toate combinatiile
+                
 
             }
             catch (Exception)

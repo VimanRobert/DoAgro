@@ -47,7 +47,7 @@ namespace DoAgro.MenuViews
 
         public async void Ramane(object sender, EventArgs e)
         {
-           await Navigation.PushModalAsync(new NavigationPage(new MainPage()));
+           await Navigation.PushModalAsync(new NavigationPage(new FlyoutMenu()));
         }
     }
 }

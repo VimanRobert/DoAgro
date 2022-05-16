@@ -33,6 +33,13 @@
                     Margin="0,0,0,50"
                     CornerRadius="50"
                     Clicked="ButtonDocumentatie"/>
+                <Button Text="Programul meu" x:Name="ButtonProgramulMeu" TextColor="#294578" BackgroundColor="White" BorderColor="#294578" BorderWidth="2"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    Padding="50,10,50,10"
+                    Margin="0,0,0,50"
+                    CornerRadius="50"
+                    Clicked="ButtonProgramulMeu_Clicked"/>
             </StackLayout>
         </Grid>
     </ContentPage.Content>

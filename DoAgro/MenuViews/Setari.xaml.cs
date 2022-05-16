@@ -18,8 +18,19 @@ namespace DoAgro.MenuViews
             InitializeComponent();
         }
 
-        private async void schimbaParola_Clicked(object sender, EventArgs e)
+        private async void SchimbaParola_Clicked(object sender, EventArgs e)
         {
+            string email = adresaEmail.Text;
+            bool sendMail = await userManager.SchimbareParola(email);
+            if (sendMail)
+            {
+                await DisplayAlert("Schimbare parola", "Solicitare permisa.\nAti primit un mail pentru schimbarea parolei.", "OK");
+            }
+
+
+
+
+            /*
             try
             {
                 string token = Preferences.Get("token", "");
@@ -57,12 +68,9 @@ namespace DoAgro.MenuViews
                 //await DisplayAlert("Schimba parola", "A aparut o eroare de sistem!\nReincercati din nou.", "OK");
                 await App.Current.MainPage.DisplayAlert("Autentificare", ex.Message, "OK");
             }
+            */
 
-        }
 
-        private void stergeContul_Clicked(object sender, EventArgs e)
-        {
-            
         }
     }
 }

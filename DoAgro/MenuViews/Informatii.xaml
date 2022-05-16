@@ -3,10 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DoAgro.MenuViews.Informatii">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <ScrollView Orientation="Vertical">
+            <StackLayout>
+                <Label Text="Asolemente"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                   FontSize="Title"
+                   FontFamily="Body"
+                   TextColor="DarkBlue"/>
+                <Label Text=" Bienal:"
+                       TextColor="Green"
+                       FontSize="Title"
+                       />
+                <Label Text="Va arata ce puteti cultiva pe aceeasi parcela de pamant daca anul trecut ati pus cultura selectata, sau ce puteti cultiva anul viitor daca anul acesta veti cultiva cultura selectata pentru a mentine solul sanatos"
+                       FontSize="Medium"
+                       />
+                <Label Text=" Trienal:"
+                       TextColor="Green"
+                       FontSize="Title"
+                       />
+                <Label Text="Asemenea asolamentului bienal, dar afiseaza rezultatele pentru 3 parcele pe 3 ani consecutivi."
+                       FontSize="Medium"
+                       />
+                <Label Text="Programul meu:"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                   FontSize="Title"
+                   FontFamily="Body"
+                   TextColor="DarkBlue"/>
+                <Label Text="Aici va puteti crea propriulprogram adaugand cate sarcini doriti. Veti fi notificat la intervalul orar ales cu numele culturii (ex: Rosii) si mesajul ales aferent sarcinii pe care o aveti (ex: Uda culturile)."
+                       FontSize="Medium"
+                    />
+            </StackLayout>
+        </ScrollView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -13,12 +13,12 @@
                 <StackLayout Margin="10,250,20,0" Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
                     <Entry x:Name="insert_email" Placeholder="Email" PlaceholderColor="Gray" TextColor="#294578" HorizontalOptions="FillAndExpand" BackgroundColor="White" Margin="0,10,0,10"/>
                     <Entry x:Name="insert_password" Placeholder="Parola" IsPassword="True" PlaceholderColor="Gray" TextColor="#294578" HorizontalOptions="FillAndExpand" BackgroundColor="White" Margin="0,10,0,20"/>
-                    <Button VerticalOptions="Center" Text="Logare" BackgroundColor="Wheat" TextColor="#294578" BorderColor="#294578"
+                    <Button VerticalOptions="Center" Text="Conectare" BackgroundColor="Wheat" TextColor="#294578" BorderColor="#294578"
                             BorderWidth="1.5" CornerRadius="30"
                             Clicked="ButtonLogin"/>
 
                     <Label HorizontalOptions="Center" TextColor="DarkRed" Padding="10" Text="Nu aveti un cont ? Apasati butonul de mai jos pentru a crea unul"/>
-                    <Button VerticalOptions="Center" Text="Autentificare" BackgroundColor="Wheat" TextColor="#294578"  BorderColor="#294578"
+                    <Button VerticalOptions="Center" Text="Inregistrare" BackgroundColor="Wheat" TextColor="#294578"  BorderColor="#294578"
                     BorderWidth="1.5" CornerRadius="30"
                             Clicked="ButtonAuth"
                             />

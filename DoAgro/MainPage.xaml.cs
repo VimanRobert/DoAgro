@@ -47,13 +47,17 @@ namespace DoAgro
         {
             Navigation.PushAsync(new Trienal());
         }
-        /*
-        private void MenuSelectedItem(object sender, SelectedItemChangedEventArgs e)
+        private void ButtonProgramulMeu_Clicked(object sender, EventArgs e)
         {
-            var item = (MenuDetailItems)e.SelectedItem;
-            Type page = item.Point;
-            Detail = new NavigationPage((Page)Activator.CreateInstance(page));
-            IsPresented = false;
-        */
+            Navigation.PushAsync(new ProgramulMeu());
+        }
+        /*
+private void MenuSelectedItem(object sender, SelectedItemChangedEventArgs e)
+{
+   var item = (MenuDetailItems)e.SelectedItem;
+   Type page = item.Point;
+   Detail = new NavigationPage((Page)Activator.CreateInstance(page));
+   IsPresented = false;
+*/
     }
 }
